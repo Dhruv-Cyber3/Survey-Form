@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
@@ -16,19 +16,16 @@
         <h1 id="title">Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
     </div>
-    <div id="thank-you">
-        <h1>Thank You.</h1>
-    </div>
     <main id="form-box">
-        <form id="survey-form">
+        <form id="survey-form" action="/data.html">
             <label id="name-label" for="name">Name</label>
-            <input id="name" type="text" placeholder="Enter your name" required>
+            <input id="name" type="text" placeholder="Enter your name" name="name" required>
             <label id="email-label" for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter your Email" required>
+            <input id="email" type="email" placeholder="Enter your Email" name="email" required>
             <label id="number-label" for="number">Age (optional)</label>
-            <input id="number" type="number" min="10" max="99" placeholder="Age" required>
+            <input id="number" type="number" min="10" max="99" placeholder="Age" name="age" required>
             <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
-            <select id="dropdown" name="role">
+            <select id="dropdown" name="role" name="current-role">
                 <option value="" selected>Select current role</option>
                 <option value="student">Student</option>
                 <option value="full-time-job">Full Time Job</option>
@@ -54,47 +51,47 @@
             <section id="checkboxes">
                 <span>What would you like to see improved? <span>(Check all that apply)</span></span>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="front" value="fornt-end-projects">
+                    <input type="checkbox" id="front" value="fornt-end-projects" name="f-end">
                     <label for="front">Front-end Projects</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="back" value="back-end-projects">
+                    <input type="checkbox" id="back" value="back-end-projects" name="b-end">
                     <label for="back">Back-end Projects</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="data-v" value="data-visualization">
+                    <input type="checkbox" id="data-v" value="data-visualization" name="data-v">
                     <label for="data-v">Data Visualization</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="challenges" value="challenges">
+                    <input type="checkbox" id="challenges" value="challenges" name="challenges">
                     <label for="challenges">Challenges</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="open-s" value="open-source-community">
+                    <input type="checkbox" id="open-s" value="open-source-community" name="ope-source">
                     <label for="open-s">Open Source Community</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="gitter" value="gitter-help-rooms">
+                    <input type="checkbox" id="gitter" value="gitter-help-rooms" name="gitter">
                     <label for="gitter">Gitter help rooms</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="videos" value="videos">
+                    <input type="checkbox" id="videos" value="videos" name="videos">
                     <label for="videos">Videos</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="city" value="city-meetups">
+                    <input type="checkbox" id="city" value="city-meetups" name="city">
                     <label for="city">City Meetups</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="wiki" value="wiki">
+                    <input type="checkbox" id="wiki" value="wiki" name="wiki">
                     <label for="wiki">Wiki</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="forum" value="forum">
+                    <input type="checkbox" id="forum" value="forum" name="forum">
                     <label for="forum">Forum</label>
                 </div>
                 <div class="checkbox-div">
-                    <input type="checkbox" id="additional" value="additional-courses">
+                    <input type="checkbox" id="additional" value="additional-courses" name="additional">
                     <label for="additional">Additional Courses</label>
                 </div>
             </section>
@@ -105,7 +102,7 @@
             <button id="submit">SUBMIT</button>
         </form>
     </main>
-    <script src="survey.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
