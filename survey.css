@@ -1,0 +1,113 @@
+body {
+  background: url("lukas-blazek-GnvurwJsKaY-unsplash.jpg");
+  margin: 0;
+}
+#header {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+#title {
+  font-weight: 700;
+}
+#description {
+  font-weight: 600;
+}
+#form-box {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+  padding: 50px 40px;
+  background-color: rgba(42, 4, 78, 0.8);
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+}
+input[type="text"] {
+  width: 100%;
+  height: 2em;
+  padding: 10px auto;
+  border-radius: 6px;
+  margin: 10px auto 25px auto;
+  border: 2px solid rgba(42, 4, 78, 0.8);
+}
+input[type="email"] {
+  width: 100%;
+  height: 2em;
+  padding: 10px auto;
+  border-radius: 6px;
+  margin: 10px auto 25px auto;
+  border: 0px solid rgb(90, 81, 81);
+}
+input[type="number"] {
+  width: 100%;
+  height: 2em;
+  padding: 10px auto;
+  border-radius: 6px;
+  margin: 10px auto 25px auto;
+  border: 2px solid rgba(42, 4, 78, 0.8);
+}
+#dropdown {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px auto;
+}
+#radio {
+  width: 100%;
+  display: block;
+  font-size: 1em;
+  padding: 20px 10px;
+  margin: 20px auto;
+}
+.options {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+}
+#checkboxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.checkbox-div {
+  margin: 5px;
+}
+#comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+#text-area {
+  height: auto;
+  width: 100%;
+  margin: 20px auto 10px auto;
+}
+#submit {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  margin: 30px auto;
+  border: 2px solid rgba(42, 4, 78, 0.8);
+  border-radius: 5px;
+  background-color: rgb(10, 255, 222);
+  font-size: 0.75em;
+  color: rgb(0, 26, 255);
+  font-weight: 800;
+}
+#submit:hover {
+  cursor: pointer;
+}
+#thank-you {
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  margin: 450px;
+  font-size: 3em;
+  display: none;
+}
