@@ -4,7 +4,6 @@ const path = require("path");
 const mongoose = require("mongoose");
 const Feedback = require("./models/schema");
 const bodyParser = require("body-parser");
-const hello = "hello";
 const app = express();
 
 mongoose.connect("mongodb://localhost/feedbackdb", {
